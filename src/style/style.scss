@@ -1,0 +1,42 @@
+$primary: #a63f3f;
+$dark-primary: #912020;
+$background: #ffffff;
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#get-started-btn {
+  background: $primary;
+  color: $background;
+}
+
+nav a {
+  font-weight: 800;
+  color: $primary;
+  &:hover {
+    color: $dark-primary;
+  }
+}
+
+#ingredientsList a {
+  font-weight: 800;
+  background: $primary;
+  color: $background;
+  &:hover {
+    background: $background;
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+#undesiredsList a {
+  font-weight: 600;
+  background: $primary;
+  color: $background;
+  &:hover {
+    background: $background;
+    color: $primary;
+    cursor: pointer;
+  }
+}

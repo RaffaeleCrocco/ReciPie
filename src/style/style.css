@@ -1,0 +1,42 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#get-started-btn {
+  background: #a63f3f;
+  color: #ffffff;
+}
+
+nav a {
+  font-weight: 800;
+  color: #a63f3f;
+}
+
+nav a:hover {
+  color: #912020;
+}
+
+#ingredientsList a {
+  font-weight: 800;
+  background: #a63f3f;
+  color: #ffffff;
+}
+
+#ingredientsList a:hover {
+  background: #ffffff;
+  color: #a63f3f;
+  cursor: pointer;
+}
+
+#undesiredsList a {
+  font-weight: 600;
+  background: #a63f3f;
+  color: #ffffff;
+}
+
+#undesiredsList a:hover {
+  background: #ffffff;
+  color: #a63f3f;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
