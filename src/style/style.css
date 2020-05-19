@@ -7,6 +7,14 @@ body {
   color: #ffffff;
 }
 
+/* -------------------------------Page Header------------------------------- */
+#website-title {
+  font-size: 28px;
+  padding-left: 10px;
+  color: #212529;
+  font-weight: 500;
+}
+
 nav a {
   font-weight: 800;
   color: #a63f3f;
@@ -38,5 +46,51 @@ nav a:hover {
   background: #ffffff;
   color: #a63f3f;
   cursor: pointer;
+}
+
+#list-img {
+  max-width: 255px;
+  max-height: 205px;
+}
+
+#jumbotron-text {
+  color: #ffffff;
+}
+
+#jumbotron-text #slogan {
+  font-size: 36px;
+}
+
+.jumbotron {
+  background-image: url("../img/bread.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#max-ingredients-button {
+  background: #f2f2f2;
+  border: none;
+  color: #212529;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: #a63f3f;
+}
+
+.custom-range::-webkit-slider-thumb::-moz-range-thumb {
+  background: #a63f3f;
+}
+
+.custom-range::-webkit-slider-thumb::-ms-thumb {
+  background: #a63f3f;
+}
+
+.card-header {
+  background-color: #ccedcc;
+}
+
+#search-btn-container {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */

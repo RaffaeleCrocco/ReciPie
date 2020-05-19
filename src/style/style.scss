@@ -1,6 +1,8 @@
 $primary: #a63f3f;
 $dark-primary: #912020;
+$secondary: #f2f2f2;
 $background: #ffffff;
+$text: #212529;
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -9,6 +11,14 @@ body {
 #get-started-btn {
   background: $primary;
   color: $background;
+}
+
+/* -------------------------------Page Header------------------------------- */
+#website-title{
+  font-size:28px;
+  padding-left: 10px;
+  color: $text;
+  font-weight: 500;
 }
 
 nav a {
@@ -40,3 +50,47 @@ nav a {
     cursor: pointer;
   }
 }
+
+#list-img{
+  max-width: 255px;
+  max-height: 205px;
+}
+
+#jumbotron-text{
+  color: $background;
+  & #slogan{
+    font-size: min(36px);
+  }
+}
+
+.jumbotron {
+  background-image: url("../img/bread.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#max-ingredients-button{
+  background: $secondary;
+  border: none;
+  color: $text;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background:$primary;
+  &::-moz-range-thumb {
+    background:$primary;
+  }
+  &::-ms-thumb {
+    background: $primary;
+  }
+}
+
+.card-header{
+  background-color: #ccedcc;
+}
+
+#search-btn-container{
+  margin: 20px;
+}
+
