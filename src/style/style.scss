@@ -86,11 +86,14 @@ nav a {
   }
 }
 
-.card-header{
+/* .card-header{
   background-color: #ccedcc;
-}
+} */
 
 #search-btn-container{
   margin: 20px;
 }
 
+a{
+  color: $text;
+}

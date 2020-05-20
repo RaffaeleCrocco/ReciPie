@@ -86,11 +86,14 @@ nav a:hover {
   background: #a63f3f;
 }
 
-.card-header {
+/* .card-header{
   background-color: #ccedcc;
-}
-
+} */
 #search-btn-container {
   margin: 20px;
+}
+
+a {
+  color: #212529;
 }
 /*# sourceMappingURL=style.css.map */

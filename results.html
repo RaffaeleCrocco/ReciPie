@@ -13,13 +13,17 @@
                 <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
                 <span id="website-title">ReciPie</span>
             </a>
-        </div>
+        </div> 
         <div class="container">
             <div class="row">
                 <div class="col-md-6"><br/>
                     <div class="card">
                         <div class="card-header">
                             Vegan
+                            <div class="float-right">
+                                <a href="#">Go to preparation</a>
+                            </div>
+                            
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -28,49 +32,42 @@
                                 </div>
                                 <div class="col-lg-9">
                                     <h5 class="card-title">Spicy Polenta-Cheese Crackers</h5>
-                                    <p>Calories per serving: 400 kCal</p>
                                     
-
-                                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                        Ingredients and Health
-                                    </button>
                                     
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Ingredienti</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            2 Tbs olive oil  in quantity: 27
-
-                                            1/2 C chopped kimchi  in quantity: 75
-
-                                            1 clove garlic minced  in quantity: 3
-
-                                            1 Tbs gochujang  in quantity: 17
-
-                                            4 oz dry pasta (linguine or spaghetti work well)  in quantity: 113
-
-                                            1 scallion sliced thinly  in quantity: 15
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
+                                    <div class="float-center">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                            Ingredients and Health
+                                        </button>
                                     </div>
 
-
-
-                                    <a href="#" class="btn btn-primary">Go to preparation</a>
-
-
-
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"><br/>
+                    <div class="card">
+                        <div class="card-header">
+                            Vegan
+                            <div class="float-right">
+                                <a href="#">Go to preparation</a>
+                            </div>
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img id="recipe-img" src="src/img/1.jpg" class="rounded float-left w-100" alt="ReciPie">
+                                </div>
+                                <div class="col-lg-9">
+                                    <h5 class="card-title">Spicy Polenta-Cheese Crackers</h5>
+                                    
+                                    
+                                    <div class="float-center">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                            Ingredients and Health
+                                        </button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -90,3 +87,48 @@
         <script src="src/js/slider.js"></script>
     </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredienti</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>1 pound filet mignon</li>
+                <li>2 tablespoons butter</li>
+                <li>1 piece grated onion</li>
+                <li>0,5 cups white wine</li>
+                <li>1 cup chiken fund</li>
+                <li>1 cup cream</li>
+                <li>1 dash salt</li>
+                <li>1 dash grounded black pepper</li>
+                <li>1 cup well chopped rocket plant</li>
+                <li>0.5 cups rice arborea</li>
+                <li>0.3 cups chopped sundried tomato</li>
+                <li>1 cup cream</li>
+                <li>1 dash salt</li>
+                <li>1 dash grounded black pepper</li>
+                <li>1 cup well chopped rocket plant</li>
+            </ul>
+            <hr><h5 class="modal-title" id="exampleModalLongTitle">Health stats</h5> <hr>
+            <ul>
+                <li>1 pound filet mignon</li>
+                <li>2 tablespoons butter</li>
+                <li>1 piece grated onion</li>
+                <li>0,5 cups white wine</li>
+                <li>1 cup chiken fund</li>
+                <li>1 cup cream</li>
+                <li>1 dash salt</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
