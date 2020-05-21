@@ -1,7 +1,3 @@
-window.addEventListener('load',()=>{
-    maxIngredients();
-});
-
 function maxIngredients(){
     var slider = document.getElementById('slider');
     var maxIngredients = document.getElementById('max-ingredients');

@@ -1,6 +1,5 @@
 function isEnterPress(event, ingredientTxt, ingredientsList){
     if(event.keyCode == 13){
-        console.log(ingredientTxt, ingredientsList);
         createItem(ingredientTxt, ingredientsList);
     }    
 }
