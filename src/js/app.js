@@ -269,12 +269,3 @@ function getData(){
 function bodyRecover(){
     document.getElementById('body').innerHTML = body;
 }
-
-function showStats(recipe){
-    var api = apiRequest();
-
-
-
-     
-    
-}

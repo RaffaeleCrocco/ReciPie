@@ -121,6 +121,9 @@
                   aria-describedby="basic-addon1"
                   onkeypress="isEnterPress(event, 'newIngredient', 'ingredientsList')"
                 />
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="createItem('newIngredient', 'ingredientsList')">&#43;</button>
+                </div>
               </div>
               <ul id="ingredientsList" class="list-group list-group-flush">
                 <!-- ingredients list will be shown here -->
@@ -165,6 +168,9 @@
               aria-describedby="basic-addon1"
               onkeypress="isEnterPress(event, 'newUndesired', 'undesiredsList')"
             />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="createItem('newUndesired', 'undesiredsList')">&#43;</button>
+            </div>
           </div>
           <ul id="undesiredsList" class="list-group list-group-flush">
             <!-- undesireds list will shown here -->
