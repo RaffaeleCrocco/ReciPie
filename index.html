@@ -1,154 +1,329 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600&display=swap" rel="stylesheet">
-        <!-- Personal style whit css and sass -->
-        <link rel="stylesheet" href="./src/style/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="container">
-            <a class="navbar-brand" href="#get-started">
-                <img src="src/img/ReciPie-logo.svg" class="rounded float-left" alt="ReciPie" width="65px">
-                <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-                <span id="website-title">ReciPie</span>
-            </a>
-        </div>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600&display=swap" rel="stylesheet" />
+    <!-- Personal style whit css and sass -->
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Personal script -->
+    <script src="src/js/lists.js"></script>
+    <script src="src/js/slider.js"></script>
+    <script src="src/js/localSession.js"></script>
+    <script src="src/js/private.js"></script>
+    <script src="src/js/app.js"></script>
+    
+  </head>
+  <body id="body">
+    <div class="container">
+      <a class="navbar-brand" href="#get-started">
+        <img
+          src="src/img/ReciPie-logo.svg"
+          class="rounded float-left"
+          alt="ReciPie"
+          width="65px"
+        />
+        <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        <span id="website-title">ReciPie</span>
+      </a>
+    </div>
 
-        <div class="jumbotron jumbotron-fluid jumbotron-dark">
-            <div class="container">
-                <div class="col-lg-9" id="jumbotron-text">
-                    <h1 id="slogan" class="display-4">Put something on the plate</h1>
-                    <p>Thousands of recipes from the most popular cooking sites to offer you the best.
-                    <br>Search over <strong>1.5 million</strong> English and <strong>200,000</strong> Spanish recipes.</p>
-                    <a href="#get-started">
-                        <button type="button" class="btn" id="get-started-btn">Get started</button>
-                    </a>
-                </div>
+    <div class="jumbotron jumbotron-fluid jumbotron-dark">
+      <div class="container">
+        <div class="col-lg-9" id="jumbotron-text">
+          <h1 id="slogan" class="display-4">Put something on the plate</h1>
+          <p>
+            Thousands of recipes from the most popular cooking sites to offer
+            you the best. <br />Search over <strong>1.5 million</strong> English
+            and <strong>200,000</strong> Spanish recipes.
+          </p>
+          <a href="#get-started">
+            <button type="button" class="btn" id="get-started-btn">
+              Get started
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a name="get-started"></a>
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link active"
+            id="nav-home-tab"
+            data-toggle="tab"
+            href="#nav-ingredients"
+            role="tab"
+            aria-controls="nav-ingredients"
+            aria-selected="true"
+            >Ingredients</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            data-toggle="tab"
+            href="#nav-preferences"
+            role="tab"
+            aria-controls="nav-preferences"
+            aria-selected="false"
+            >Preferences</a
+          >
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-ingredients"
+          role="tabpanel"
+          aria-labelledby="nav-ingredients-tab"
+        >
+          <br />
+          <div class="row">
+            <div class="col-lg-2">
+              <img
+                src="src/img/list.svg"
+                class="rounded float-left w-100"
+                id="list-img"
+                alt="ReciPie"
+              />
             </div>
-        </div>
-
-        <a name="get-started"></a>
-        <div class="container">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-ingredients" role="tab" aria-controls="nav-ingredients" aria-selected="true">Ingredients</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-preferences" role="tab" aria-controls="nav-preferences" aria-selected="false">Preferences</a>
-                </div>
-            </nav>
-            
-            <div class="tab-content" id="nav-tabContent">
-
-                <div class="tab-pane fade show active" id="nav-ingredients" role="tabpanel" aria-labelledby="nav-ingredients-tab"><br/>
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <img src="src/img/list.svg" class="rounded float-left w-100" id="list-img" alt="ReciPie">
-                        </div>
-                        <div class="col-lg-10">
-                            <h4>Ingredients list</h4>
-                            Create a list with the ingredients you intend to use in your next recipe. The more ingredients you enter in the list, the more accurate the recipes we will show. Too specific research may not produce results.<br/><br/>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="newIngredient" placeholder="" aria-label="" aria-describedby="basic-addon1" onkeypress="isEnterPress(event, 'newIngredient', 'ingredientsList')">
-                            </div>
-                            <ul id="ingredientsList" class="list-group list-group-flush"><!-- ingredients list will be shown here --></ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="tab-pane fade" id="nav-preferences" role="tabpanel" aria-labelledby="nav-preferences-tab"><br/>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <h4>Bibbidi bobbidi boo that's a warning for you</h4> 
-                        An excessive amount of restrictions could narrow the search to the point of not producing results.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <h4>Undesireds list</h4>
-                    You can create a small list of foods that you don't like or are allergic to, we will try not to show them in the results.<br/><br/>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="newUndesired" placeholder="" aria-label="" aria-describedby="basic-addon1" onkeypress="isEnterPress(event, 'newUndesired', 'undesiredsList')">
-                    </div>
-                    <ul id="undesiredsList" class="list-group list-group-flush"><!-- undesireds list will shown here --></ul>
-                    <div class="row">
-                        <div class="col-lg-6"><hr>
-                            <h4>Health and diet stuff</h4>
-                            We know how important it is to choose carefully what we eat, for this we select the recipes according to your diet. <br/><br/>
-                            <div class="row">
-                                <div class="col-lg-6" id="health-parameters">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="vegan">
-                                        <label class="custom-control-label custom-control-label" for="customCheck1">Vegan</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="vegetarian">
-                                        <label class="custom-control-label" for="customCheck2">Vegetarian</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="sugar-conscious">
-                                        <label class="custom-control-label" for="customCheck3">Sugar conscious</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="peanut-free">
-                                        <label class="custom-control-label" for="customCheck4">Peanut free</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck5" name="alcohol-free">
-                                        <label class="custom-control-label" for="customCheck5">Alcohol free</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6" id="diet-parameters">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="balanced" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="balanced">Balanced diet</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="high-protein" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="high-protein">High protein diet</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="low-fat" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="low-fat">Low fat diet</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="low-carb" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="low-carbs">Low carb diet</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6"><hr>
-                            <h4>Max number of ingredients</h4>
-                            Each recipe we show you will have a list of ingredients to prepare it. Set a maximum number of ingredients to avoid overly complex recipes.<br/><br/>
-                            <input type="range" class="custom-range" min="3" max="20" id="slider" oninput="maxIngredients()"><br/><br/>
-                            <button type="button" class="btn" id="max-ingredients-button">
-                                We will show you recipe with <span class="badge badge-light" id="max-ingredients">9</span> as max number of ingredients.
-                            </button>
-                        </div>
-                    </div>    
-                </div>
-            </div><br/><br/><br/><br/><br/>
-        </div>
-
-        <div class="fixed-bottom" id="search-btn-container">
-            <div class="container">
-                <div class="float-right">
-                    <a href="#">
-                        <button type="button" class="btn" id="get-started-btn" onclick="apiRequest()">Search recipes</button>
-                    </a>
-                </div>
+            <div class="col-lg-10">
+              <h4>Ingredients list</h4>
+              Create a list with the ingredients you intend to use in your next
+              recipe. The more ingredients you enter in the list, the more
+              accurate the recipes we will show. Too specific research may not
+              produce results.<br /><br />
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="newIngredient"
+                  placeholder=""
+                  aria-label=""
+                  aria-describedby="basic-addon1"
+                  onkeypress="isEnterPress(event, 'newIngredient', 'ingredientsList')"
+                />
+              </div>
+              <ul id="ingredientsList" class="list-group list-group-flush">
+                <!-- ingredients list will be shown here -->
+              </ul>
             </div>
+          </div>
         </div>
 
+        <div
+          class="tab-pane fade"
+          id="nav-preferences"
+          role="tabpanel"
+          aria-labelledby="nav-preferences-tab"
+        >
+          <br />
+          <div
+            class="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <h4>Bibbidi bobbidi boo that's a warning for you</h4>
+            An excessive amount of restrictions could narrow the search to the
+            point of not producing results.
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h4>Undesireds list</h4>
+          You can create a small list of foods that you don't like or are
+          allergic to, we will try not to show them in the results.<br /><br />
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="newUndesired"
+              placeholder=""
+              aria-label=""
+              aria-describedby="basic-addon1"
+              onkeypress="isEnterPress(event, 'newUndesired', 'undesiredsList')"
+            />
+          </div>
+          <ul id="undesiredsList" class="list-group list-group-flush">
+            <!-- undesireds list will shown here -->
+          </ul>
+          <div class="row">
+            <div class="col-lg-6">
+              <hr />
+              <h4>Health and diet stuff</h4>
+              We know how important it is to choose carefully what we eat, for
+              this we select the recipes according to your diet. <br /><br />
+              <div class="row">
+                <div class="col-lg-6" id="health-parameters">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck1"
+                      name="vegan"
+                    />
+                    <label
+                      class="custom-control-label custom-control-label"
+                      for="customCheck1"
+                      >Vegan</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck2"
+                      name="vegetarian"
+                    />
+                    <label class="custom-control-label" for="customCheck2"
+                      >Vegetarian</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck3"
+                      name="sugar-conscious"
+                    />
+                    <label class="custom-control-label" for="customCheck3"
+                      >Sugar conscious</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck4"
+                      name="peanut-free"
+                    />
+                    <label class="custom-control-label" for="customCheck4"
+                      >Peanut free</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck5"
+                      name="alcohol-free"
+                    />
+                    <label class="custom-control-label" for="customCheck5"
+                      >Alcohol free</label
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6" id="diet-parameters">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="balanced"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="balanced"
+                      >Balanced diet</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="high-protein"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="high-protein"
+                      >High protein diet</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="low-fat"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="low-fat"
+                      >Low fat diet</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="low-carb"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="low-carb"
+                      >Low carb diet</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <hr />
+              <h4>Max number of ingredients</h4>
+              Each recipe we show you will have a list of ingredients to prepare
+              it. Set a maximum number of ingredients to avoid overly complex
+              recipes.<br /><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="3"
+                max="20"
+                id="slider"
+                oninput="maxIngredients()"
+              /><br /><br />
+              <button type="button" class="btn" id="max-ingredients-button">
+                We will show you recipe with
+                <span class="badge badge-light" id="max-ingredients">9</span> as
+                max number of ingredients.
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br />
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <!-- Personal script -->
-        <script src="src/js/lists.js"></script>
-        <script src="src/js/slider.js"></script>
-        <script src="src/js/private.js"></script>
-        <script src="src/js/request.js"></script>
-        <script src="src/js/localSession.js"></script>
-    </body>
+    <div class="fixed-bottom" id="search-btn-container">
+      <div class="container">
+        <div class="float-right">
+          <a href="#" target="">
+            <button
+              type="button"
+              class="btn"
+              id="get-started-btn"
+              onclick="getData()"
+            >
+              Search recipes
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

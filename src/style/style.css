@@ -96,4 +96,14 @@ nav a:hover {
 a {
   color: #212529;
 }
+
+#recipe-img {
+  margin-bottom: 15px;
+}
+
+#card-subtitle {
+  margin-top: -10px;
+  font-style: italic;
+  font-size: 13px;
+}
 /*# sourceMappingURL=style.css.map */

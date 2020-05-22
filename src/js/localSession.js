@@ -23,7 +23,7 @@ window.addEventListener('load', (event) => {
     }
 
     if(health){
-        var healthArray = health.split(" "); console.log(healthArray);
+        var healthArray = health.split(" ");
         var checkboxArray = document.getElementById('health-parameters').getElementsByTagName("div");
         for(i = 0;i<checkboxArray.length; i++){
             for(j=0; j<healthArray.length; j++){
